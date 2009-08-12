@@ -1,1 +1,1 @@
-grails.war.destFile = "haushalt-verwaltung.war"
+grails.war.destFile = "dont-forget-your-food-supplies.war"
