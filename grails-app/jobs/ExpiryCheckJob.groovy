@@ -7,7 +7,7 @@ class ExpiryCheckJob
 {
 	static triggers =
 	{
-		simple(name: 'expiryCheck', cronExpression: "0 0 0 * * ?")
+		cron(name: 'expiryCheck', cronExpression: '0 0 0 * * ?')
 		//simple(name:'expiryCheck', startDelay: 10000, repeatInterval: 5000l)
 	}
 	// execute job once in 5 seconds
