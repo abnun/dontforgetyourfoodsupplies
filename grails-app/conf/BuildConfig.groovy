@@ -1,0 +1,1 @@
+grails.war.destFile = "haushalt-verwaltung.war"
