@@ -41,6 +41,8 @@ environments
 	production
 	{
 		grails.serverURL = "http://haushalt-verwaltung.markus-mueller.name/"
+
+		grails.mail.host = "127.1.1.0"
 	}
 	development
 	{
