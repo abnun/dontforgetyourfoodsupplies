@@ -1,19 +1,20 @@
 
-
+<%@ page import="name.markus_mueller.dontforgetyourfoodsupplies.FoodCategory" %>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="main" />
-        <title>Edit FoodCategory</title>
+        <g:set var="entityName" value="${message(code: 'foodCategory.label', default: 'FoodCategory')}" />
+        <title><g:message code="default.edit.label" args="[entityName]" /></title>
     </head>
     <body>
         <div class="nav">
-            <span class="menuButton"><a class="home" href="${createLinkTo(dir:'')}">Home</a></span>
-            <span class="menuButton"><g:link class="list" action="list">FoodCategory List</g:link></span>
-            <span class="menuButton"><g:link class="create" action="create">New FoodCategory</g:link></span>
+            <span class="menuButton"><a class="home" href="${resource(dir: '')}">Home</a></span>
+            <span class="menuButton"><g:link class="list" action="list"><g:message code="default.list.label" args="[entityName]" /></g:link></span>
+            <span class="menuButton"><g:link class="create" action="create"><g:message code="default.new.label" args="[entityName]" /></g:link></span>
         </div>
         <div class="body">
-            <h1>Edit FoodCategory</h1>
+            <h1><g:message code="default.edit.label" args="[entityName]" /></h1>
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
@@ -23,27 +24,27 @@
             </div>
             </g:hasErrors>
             <g:form method="post" >
-                <input type="hidden" name="id" value="${foodCategoryInstance?.id}" />
-                <input type="hidden" name="version" value="${foodCategoryInstance?.version}" />
+                <g:hiddenField name="id" value="${foodCategoryInstance?.id}" />
+                <g:hiddenField name="version" value="${foodCategoryInstance?.version}" />
                 <div class="dialog">
                     <table>
                         <tbody>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="name">Name:</label>
+                                  <label for="name"><g:message code="foodCategory.name.label" default="Name" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean:foodCategoryInstance,field:'name','errors')}">
-                                    <input type="text" id="name" name="name" value="${fieldValue(bean:foodCategoryInstance,field:'name')}"/>
+                                <td valign="top" class="value ${hasErrors(bean: foodCategoryInstance, field: 'name', 'errors')}">
+                                    <g:textField name="name" value="${foodCategoryInstance?.name}" />
                                 </td>
-                            </tr> 
+                            </tr>
                         
                         </tbody>
                     </table>
                 </div>
                 <div class="buttons">
-                    <span class="button"><g:actionSubmit class="save" value="Update" /></span>
-                    <span class="button"><g:actionSubmit class="delete" onclick="return confirm('Are you sure?');" value="Delete" /></span>
+                    <span class="button"><g:actionSubmit class="save" action="update" value="${message(code: 'default.button.update.label', default: 'Update')}" /></span>
+                    <span class="button"><g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" /></span>
                 </div>
             </g:form>
         </div>

@@ -1,7 +1,7 @@
-import name.markus_mueller.domain.Supply
-import name.markus_mueller.domain.Paket
-import name.markus_mueller.domain.FixFuer
-import name.markus_mueller.domain.Suessie
+import name.markus_mueller.dontforgetyourfoodsupplies.Supply
+import name.markus_mueller.dontforgetyourfoodsupplies.Paket
+import name.markus_mueller.dontforgetyourfoodsupplies.FixFuer
+import name.markus_mueller.dontforgetyourfoodsupplies.Suessie
 
 class ExpiryCheckJob
 {

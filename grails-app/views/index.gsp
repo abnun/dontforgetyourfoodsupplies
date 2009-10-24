@@ -57,8 +57,8 @@
 		Allgemein
 	</h2>
 	<ul>
-		<li class="controller"><g:link controller="foodCategory">Manage FoodCategories (Meat, Cake, Fish, etc.)</g:link></li>
-		<li class="controller"><g:link controller="entity">Manage Entities (gram, kilo, piece, etc.)</g:link></li>
+		<li class="controller"><g:link controller="foodCategory"><g:message code="foodCategory.manage" /></g:link></li>
+		<li class="controller"><g:link controller="entity"><g:message code="entity.manage" /></g:link></li>
 	</ul>
 </div>
 </body>
