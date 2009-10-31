@@ -1,4 +1,4 @@
-<%@ page import="name.markus_mueller.dontforgetyourfoodsupplies.ArchiveSupply" %>
+<%@ page import="de.webmpuls.dontforgetyourfoodsupplies.ArchiveSupply" %>
 <jq:jquery>
 	<%
 		Collection archiveSupplies = ArchiveSupply.list()

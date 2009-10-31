@@ -1,4 +1,4 @@
-package name.markus_mueller.dontforgetyourfoodsupplies
+package de.webmpuls.dontforgetyourfoodsupplies
 
 class Supply
 {

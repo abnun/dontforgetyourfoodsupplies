@@ -1,7 +1,7 @@
-package name.markus_mueller.dontforgetyourfoodsupplies
+package de.webmpuls.dontforgetyourfoodsupplies
 
 import org.compass.core.engine.SearchEngineQueryParseException
-import name.markus_mueller.dontforgetyourfoodsupplies.Supply
+import de.webmpuls.dontforgetyourfoodsupplies.Supply
 
 class SearchController
 {

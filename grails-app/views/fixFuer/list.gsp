@@ -1,5 +1,5 @@
 
-<%@ page import="name.markus_mueller.dontforgetyourfoodsupplies.FixFuer" %>
+<%@ page import="de.webmpuls.dontforgetyourfoodsupplies.FixFuer" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

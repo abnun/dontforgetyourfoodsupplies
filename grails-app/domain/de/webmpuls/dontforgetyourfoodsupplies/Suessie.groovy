@@ -1,6 +1,6 @@
-package name.markus_mueller.dontforgetyourfoodsupplies
+package de.webmpuls.dontforgetyourfoodsupplies
 
-class FixFuer extends Supply
+class Suessie extends Supply
 {
 	Date haltbarBis
 

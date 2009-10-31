@@ -1,5 +1,5 @@
 
-<%@ page import="name.markus_mueller.dontforgetyourfoodsupplies.FoodCategory" %>
+<%@ page import="de.webmpuls.dontforgetyourfoodsupplies.FoodCategory" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />

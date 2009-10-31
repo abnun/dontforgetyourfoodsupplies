@@ -1,7 +1,7 @@
-import name.markus_mueller.dontforgetyourfoodsupplies.Supply
-import name.markus_mueller.dontforgetyourfoodsupplies.Paket
-import name.markus_mueller.dontforgetyourfoodsupplies.FixFuer
-import name.markus_mueller.dontforgetyourfoodsupplies.Suessie
+import de.webmpuls.dontforgetyourfoodsupplies.Supply
+import de.webmpuls.dontforgetyourfoodsupplies.Paket
+import de.webmpuls.dontforgetyourfoodsupplies.FixFuer
+import de.webmpuls.dontforgetyourfoodsupplies.Suessie
 
 class ExpiryCheckJob
 {

@@ -1,5 +1,5 @@
 
-<%@ page import="name.markus_mueller.dontforgetyourfoodsupplies.Paket" %>
+<%@ page import="de.webmpuls.dontforgetyourfoodsupplies.Paket" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -51,7 +51,7 @@
                                     <label for="entity"><g:message code="paket.entity.label" default="Entity" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: paketInstance, field: 'entity', 'errors')}">
-                                    <g:select name="entity.id" from="${name.markus_mueller.dontforgetyourfoodsupplies.Entity.list()}" optionKey="id" value="${paketInstance?.entity?.id}" noSelection="['null': '']" />
+                                    <g:select name="entity.id" from="${de.webmpuls.dontforgetyourfoodsupplies.Entity.list()}" optionKey="id" value="${paketInstance?.entity?.id}" noSelection="['null': '']" />
                                 </td>
                             </tr>
                         
@@ -60,7 +60,7 @@
                                     <label for="foodCategory"><g:message code="paket.foodCategory.label" default="Food Category" /></label>
                                 </td>
                                 <td valign="top" class="value ${hasErrors(bean: paketInstance, field: 'foodCategory', 'errors')}">
-                                    <g:select name="foodCategory.id" from="${name.markus_mueller.dontforgetyourfoodsupplies.FoodCategory.list()}" optionKey="id" value="${paketInstance?.foodCategory?.id}" noSelection="['null': '']" />
+                                    <g:select name="foodCategory.id" from="${de.webmpuls.dontforgetyourfoodsupplies.FoodCategory.list()}" optionKey="id" value="${paketInstance?.foodCategory?.id}" noSelection="['null': '']" />
                                 </td>
                             </tr>
                         
