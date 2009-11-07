@@ -17,6 +17,10 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
+			<br/>
+			<g:message code="supply.amount.text" args="[paketInstanceTotal, entityName + 'e']" />
+			<br/>
+			<br/>
             <div class="list">
                 <table>
                     <thead>
@@ -50,7 +54,7 @@
                         
                             <td>${fieldValue(bean: paketInstance, field: "foodCategory")}</td>
                         
-                            <td><g:formatDate date="${paketInstance.eingefrorenAm}" /></td>
+                            <td><wm_timeline:isExpired expiringDate="${paketInstance.eingefrorenAm}" isPaket="true"><g:formatDate date="${paketInstance.eingefrorenAm}" /></wm_timeline:isExpired></td>
                         
                         </tr>
                     </g:each>

@@ -50,7 +50,7 @@
                         <%          } else { %>
                             <td>\${fieldValue(bean: ${propertyName}, field: "${p.name}")}</td>
                         <%  }
-						//}   
+						//}
 						} %>
                         </tr>
                     </g:each>

@@ -14,6 +14,7 @@ class Supply
 	Double amount = 1
 	Entity entity
 	FoodCategory foodCategory
+	Boolean expired = false
 
     static constraints =
 	{

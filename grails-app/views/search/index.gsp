@@ -14,8 +14,8 @@
   	<div class="title" style="margin-left: 20px;">
       <span>
         <g:if test="${haveQuery && haveResults}">
-          Zeige <strong>${searchResult.offset + 1}</strong> - <strong>${searchResult.results.size() + searchResult.offset}</strong> of <strong>${searchResult.total}</strong>
-          Ergenisse f&uuml;r <strong>${searchTerm}</strong>
+          Zeige <strong>${searchResult.offset + 1}</strong> - <strong>${searchResult.results.size() + searchResult.offset}</strong> von <strong>${searchResult.total}</strong>
+          Ergebnisse(n) f&uuml;r <strong>${searchTerm}</strong>
         </g:if>
         <g:else>
         &nbsp;

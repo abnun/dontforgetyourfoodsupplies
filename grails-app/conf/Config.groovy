@@ -59,7 +59,7 @@ environments
 
 // enable GSP preprocessing:
 // replace head -> g:captureHead, title -> g:captureTitle, meta -> g:captureMeta, body -> g:captureBody
-grails.views.gsp.sitemesh.preprocess = true
+grails.views.gsp.sitemesh.preprocess = false
 
 // log4j configuration
 log4j =

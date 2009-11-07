@@ -17,6 +17,10 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
+			<br/>
+			<g:message code="supply.amount.text" args="[fixFuerInstanceTotal, entityName]" />
+			<br/>
+			<br/>
             <div class="list">
                 <table>
                     <thead>
@@ -42,7 +46,7 @@
                         
                             <td>${fieldValue(bean: fixFuerInstance, field: "amount")}</td>
                         
-                            <td><g:formatDate date="${fixFuerInstance.haltbarBis}" /></td>
+                            <td><wm_timeline:isExpired expiringDate="${fixFuerInstance.haltbarBis}"><g:formatDate date="${fixFuerInstance.haltbarBis}" /></wm_timeline:isExpired></td>
                         
                         </tr>
                     </g:each>

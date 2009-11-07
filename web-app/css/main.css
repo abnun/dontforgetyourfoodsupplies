@@ -19,12 +19,12 @@ body {
 
 a:link, a:visited, a:hover {
     color: #666;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-decoration: none;
 } 
 
 h1 {
-    color: #006dba;
+    color: #8C6239;
     font-weight: normal;
     font-size: 16px;
     margin: .8em 0 .3em 0;
@@ -97,8 +97,8 @@ input:focus, select:focus, textarea:focus {
 
 .message {
     background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
-    border: 1px solid #b2d1ff;
-    color: #006dba;
+    border: 1px solid #a7a7a7;
+    color: #8C6239;
     margin: 10px 0 5px 0;
     padding: 5px 5px 5px 30px
 }
@@ -185,7 +185,7 @@ th.desc a {
     border-left: 1px solid #ddd;
 }
 .list th:hover, .list tr:hover {
-    background: #b2d1ff;
+    background: #333300;
 }
 
 /* PAGINATION */

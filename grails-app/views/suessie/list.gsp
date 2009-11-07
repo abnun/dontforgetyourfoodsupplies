@@ -17,6 +17,10 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
+			<br/>
+			<g:message code="supply.amount.text" args="[suessieInstanceTotal, entityName + 's']" />
+			<br/>
+			<br/>
             <div class="list">
                 <table>
                     <thead>
@@ -42,7 +46,7 @@
                         
                             <td>${fieldValue(bean: suessieInstance, field: "amount")}</td>
                         
-                            <td><g:formatDate date="${suessieInstance.haltbarBis}" /></td>
+                            <td><wm_timeline:isExpired expiringDate="${suessieInstance.haltbarBis}"><g:formatDate date="${suessieInstance.haltbarBis}" /></wm_timeline:isExpired></td>
                         
                         </tr>
                     </g:each>
