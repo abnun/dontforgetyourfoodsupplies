@@ -1,6 +1,7 @@
 package de.webmpuls.dontforgetyourfoodsupplies
 
 import java.text.SimpleDateFormat
+import org.apache.shiro.SecurityUtils
 
 class ExpiryService
 {
@@ -39,24 +40,45 @@ class ExpiryService
 			}
 			else if(supply instanceof Paket)
 			{
-				GregorianCalendar gregorianCalendar = new GregorianCalendar()
-				gregorianCalendar.setTime(((Paket)supply).eingefrorenAm)
-				gregorianCalendar.add(GregorianCalendar.MONTH, session.expiringMonthsPaket)
-				if (log.debugEnabled)
+				def principal = SecurityUtils.subject?.principal
+
+				Setting setting = null
+
+				if (principal)
 				{
-					SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy")
-					log.debug("paket expiringDate: ${simpleDateFormat.format(gregorianCalendar.getTime())}")
+					setting = Setting.findByUser(principal)
 				}
-				if (new Date().after(gregorianCalendar.getTime()))
+				else
 				{
-					expiredSupplies.add(supply.name)
-					supply.expired = true
-					supply.save(flush: true)
+					setting = Setting.list().iterator().next()
+				}
+
+				if (setting)
+				{
+					Integer expiringYears = setting.expiringYears
+					Integer expiringMonths = setting.expiringMonths
+
+					Integer expiringMonthsAccumulated = expiringYears + expiringMonths
+
+					GregorianCalendar gregorianCalendar = new GregorianCalendar()
+					gregorianCalendar.setTime(((Paket)supply).eingefrorenAm)
+					gregorianCalendar.add(GregorianCalendar.MONTH, expiringMonthsAccumulated)
+					if (log.debugEnabled)
+					{
+						SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy")
+						log.debug("paket expiringDate: ${simpleDateFormat.format(gregorianCalendar.getTime())}")
+					}
+					if (new Date().after(gregorianCalendar.getTime()))
+					{
+						expiredSupplies.add(supply.name)
+						supply.expired = true
+						supply.save(flush: true)
+					}
 				}
 			}
 		}
 
-		/*if (!expiredSupplies.isEmpty())
+		if (!expiredSupplies.isEmpty())
 		{
 			Locale locale = Locale.getDefault()
 
@@ -69,6 +91,6 @@ class ExpiryService
 				subject(messageSource.resolveCodeWithoutArguments('mail.subject', locale)) // "Hello John"
 				body(messageSource.resolveCode('mail.body', locale).format([expiredSupplies.toString()] as String[])) // 'this is some text'
 			}
-		}*/
+		}
     }
 }

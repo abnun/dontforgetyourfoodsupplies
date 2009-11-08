@@ -21,8 +21,7 @@ class SuessieController {
 
     def save = {
         def suessieInstance = new Suessie(params)
-		def archiveSupplyInstance = new ArchiveSupply(params)
-        if (suessieInstance.save(flush: true) && archiveSupplyInstance.save(flush: true)) {
+        if (suessieInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'suessie.label', default: 'Suessie'), suessieInstance.id])}"
             redirect(action: "show", id: suessieInstance.id)
         }
@@ -60,7 +59,7 @@ class SuessieController {
                 def version = params.version.toLong()
                 if (suessieInstance.version > version) {
                     
-                    suessieInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'suessie.label', default: 'Suessie')], "Another user has updated this Suessie while you were editing")
+                    suessieInstance.errors.rejectValue("version", "default.optimistic.locking.failure", [message(code: 'suessie.label', default: 'Suessie')] as Object[], "Another user has updated this Suessie while you were editing")
                     render(view: "edit", model: [suessieInstance: suessieInstance])
                     return
                 }

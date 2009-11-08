@@ -13,11 +13,11 @@ class TimelineTagLib {
 
 		Date expiringDate = attrs['expiringDate']
 
-		if(log.debugEnabled)
+		/*if(log.debugEnabled)
 		{
 			SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy")
 			log.debug("expiringDate: ${simpleDateFormat.format(expiringDate)}")
-		}
+		}*/
 
 		Boolean isPaket = Boolean.valueOf(attrs['isPaket'])
 
@@ -25,31 +25,37 @@ class TimelineTagLib {
 		{
 			def principal = SecurityUtils.subject?.principal
 
+			Setting setting = null
+
 			if(principal)
 			{
-				Setting setting = Setting.findByUser(principal)
+				setting = Setting.findByUser(principal)
+			}
+			else
+			{
+				setting = Setting.list().iterator().next()
+			}
 
-				if (setting && expiringYears && expiringMonths)
+			if (setting)
+			{
+				Integer expiringYears = setting.expiringYears
+				Integer expiringMonths = setting.expiringMonths
+
+				Integer expiringMonthsAccumulated = expiringYears + expiringMonths
+
+				GregorianCalendar gregorianCalendar = new GregorianCalendar()
+				gregorianCalendar.setTime(expiringDate)
+				gregorianCalendar.add(GregorianCalendar.MONTH, expiringMonthsAccumulated)
+				/*if (log.debugEnabled)
 				{
-					Integer expiringYears = setting.expiringYears
-					Integer expiringMonths = setting.expiringMonths
+					SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy")
+					log.debug("paket expiringDate: ${simpleDateFormat.format(gregorianCalendar.getTime())}")
+				}*/
+				if (new Date().after(gregorianCalendar.getTime()))
+				{
+					out << "<span style=\"color: red;\">${body()}</span>"
 
-					Integer expiringMonthsAccumulated = expiringYears + expiringMonths
-
-					GregorianCalendar gregorianCalendar = new GregorianCalendar()
-					gregorianCalendar.setTime(expiringDate)
-					gregorianCalendar.add(GregorianCalendar.MONTH, expiringMonthsAccumulated)
-					if (log.debugEnabled)
-					{
-						SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy")
-						log.debug("paket expiringDate: ${simpleDateFormat.format(gregorianCalendar.getTime())}")
-					}
-					if (new Date().after(gregorianCalendar.getTime()))
-					{
-						out << "<span style=\"color: red;\">${body()}</span>"
-
-						return out
-					}
+					return out
 				}
 			}
 		}
