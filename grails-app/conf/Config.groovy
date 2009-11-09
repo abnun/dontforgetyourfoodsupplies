@@ -42,7 +42,7 @@ environments
 	{
 		grails.serverURL = "http://haushalt-verwaltung.markus-mueller.name/"
 
-		grails.mail.host = "127.1.1.0"
+		grails.mail.host = "127.0.0.1"
 	}
 	development
 	{
