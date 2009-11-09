@@ -12,5 +12,8 @@ class ExpiryController
 	def sendMail =
 	{
 		expiryService.checkExpiryDates()
+
+		redirect(uri: '/')
+		return false
 	}
 }
