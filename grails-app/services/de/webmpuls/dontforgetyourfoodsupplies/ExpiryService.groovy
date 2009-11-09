@@ -28,6 +28,11 @@ class ExpiryService
 					supply.expired = true
 					supply.save(flush: true)
 				}
+				else
+				{
+					supply.expired = false
+					supply.save(flush: true)
+				}
 			}
 			else if(supply instanceof Suessie)
 			{
@@ -35,6 +40,11 @@ class ExpiryService
 				{
 					expiredSupplies.add(supply.name)
 					supply.expired = true
+					supply.save(flush: true)
+				}
+				else
+				{
+					supply.expired = false
 					supply.save(flush: true)
 				}
 			}
@@ -72,6 +82,11 @@ class ExpiryService
 					{
 						expiredSupplies.add(supply.name)
 						supply.expired = true
+						supply.save(flush: true)
+					}
+					else
+					{
+						supply.expired = false
 						supply.save(flush: true)
 					}
 				}
