@@ -28,21 +28,28 @@ grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
 grails.views.default.codec="none" // none, html, base64
 grails.views.gsp.encoding="UTF-8"
 grails.converters.encoding="UTF-8"
+// enable Sitemesh preprocessing of GSP pages
+grails.views.gsp.sitemesh.preprocess = true
+// scaffolding templates configuration
+grails.scaffolding.templates.domainSuffix = 'Instance'
 
+// Set to false to use the new Grails 1.2 JSONBuilder in the render method
+grails.json.legacy.builder=false
 // enabled native2ascii conversion of i18n properties files
 grails.enable.native2ascii = true
+// whether to install the java.util.logging bridge for sl4j. Disable fo AppEngine!
+grails.logging.jul.usebridge = true
 
 // gsp reloading
 //grails.gsp.enable.reload=true
 
 // set per-environment serverURL stem for creating absolute links
-environments
-{
-	production
+environments {
+    production
 	{
 		grails.serverURL = "http://haushalt-verwaltung.markus-mueller.name/"
 
-		grails.mail.host = "127.0.0.1"
+		grails.mail.host = "127.1.1.0"
 	}
 	development
 	{
@@ -54,17 +61,18 @@ environments
 	{
 		grails.serverURL = "http://localhost:8080/${appName}"
 	}
-
 }
 
-// enable GSP preprocessing:
-// replace head -> g:captureHead, title -> g:captureTitle, meta -> g:captureMeta, body -> g:captureBody
-grails.views.gsp.sitemesh.preprocess = false
-
 // log4j configuration
-log4j =
-{
-    appenders
+log4j = {
+    // Example of changing the log pattern for the default console
+    // appender:
+    //
+    //appenders {
+    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
+    //}
+
+	appenders
 	{
 		console name:'stdout', layout:pattern(conversionPattern: '%d{yyyy-MM-dd HH:mm:ss,SSS} %p %c{2} %m%n')
 	}
@@ -78,8 +86,8 @@ log4j =
     error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
 	       'org.codehaus.groovy.grails.web.pages', //  GSP
 	       'org.codehaus.groovy.grails.web.sitemesh', //  layouts
-	       'org.codehaus.groovy.grails."web.mapping.filter', // URL mapping
-	       'org.codehaus.groovy.grails."web.mapping', // URL mapping
+	       'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
+	       'org.codehaus.groovy.grails.web.mapping', // URL mapping
 	       'org.codehaus.groovy.grails.commons', // core / classloading
 	       'org.codehaus.groovy.grails.plugins', // plugins
 	       'org.codehaus.groovy.grails.orm.hibernate', // hibernate integration

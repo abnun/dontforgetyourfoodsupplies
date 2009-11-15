@@ -23,4 +23,4 @@ grails.project.dependency.resolution = {
 
 }
 
-grails.war.destFile = "dont-forget-your-food-supplies.war"
+grails.project.war.file = "target/dont-forget-your-food-supplies.war"
