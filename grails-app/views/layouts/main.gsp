@@ -51,8 +51,6 @@
 					</div>
 					<div id="body_right">
 
-						<g:include controller="expiry" action="index"/>
-
 						<div id="sidebars" class="sidebars">
 
 							<h2 title="Eingefrorene Pakete verwalten">
