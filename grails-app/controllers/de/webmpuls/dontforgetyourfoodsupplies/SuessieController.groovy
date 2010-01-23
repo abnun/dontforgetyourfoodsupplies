@@ -21,7 +21,7 @@ class SuessieController {
 
     def save = {
         def suessieInstance = new Suessie(params)
-		def archiveSupplyInstance = new ArchiveSupply(name: params.name, supplyClass: Suessie.getClass().name)
+		def archiveSupplyInstance = new ArchiveSupply(name: params.name, supplyClass: Suessie.newInstance().getClass().getSimpleName())
         if (suessieInstance.save(flush: true) && archiveSupplyInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'suessie.label', default: 'Suessie'), suessieInstance.id])}"
             redirect(action: "show", id: suessieInstance.id)

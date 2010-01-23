@@ -21,7 +21,7 @@ class FixFuerController {
 
     def save = {
         def fixFuerInstance = new FixFuer(params)
-		def archiveSupplyInstance = new ArchiveSupply(name: params.name, supplyClass: FixFuer.getClass().name)
+		def archiveSupplyInstance = new ArchiveSupply(name: params.name, supplyClass: FixFuer.newInstance().getClass().getSimpleName())
         if (fixFuerInstance.save(flush: true) && archiveSupplyInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'fixFuer.label', default: 'FixFuer'), fixFuerInstance.id])}"
             redirect(action: "show", id: fixFuerInstance.id)

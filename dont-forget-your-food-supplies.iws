@@ -16,24 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="Neue Grails-Version, AutoComplete repariert">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/archiveSupply/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/fixFuer/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/fixFuer/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prodDbHaushaltVerwaltung.properties" afterPath="$PROJECT_DIR$/prodDbHaushaltVerwaltung.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/paket/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/paket/create.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/archiveSupply/show.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery.bgiframe.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prodDbHaushaltVerwaltung.script" afterPath="$PROJECT_DIR$/prodDbHaushaltVerwaltung.script" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/autoComplete/_suggestions.gsp" afterPath="$PROJECT_DIR$/grails-app/views/autoComplete/_suggestions.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/archiveSupply/edit.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dont-forget-your-food-supplies.iws" afterPath="$PROJECT_DIR$/dont-forget-your-food-supplies.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery/jquery-ui-1.7.2.custom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupplyController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/archiveSupply/create.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/SuessieController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/SuessieController.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/FixFuerController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/FixFuerController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/suessie/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/suessie/create.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/PaketController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/PaketController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupply.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupply.groovy" />
     </list>
     <ignored path="dont-forget-your-food-supplies.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,19 +79,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_suggestions.gsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/autoComplete/_suggestions.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="79" selection-start="351" selection-end="351" vertical-scroll-proportion="-0.8888889">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/fixFuer/create.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="104" selection-start="441" selection-end="491" vertical-scroll-proportion="-1.7777778">
+            <state line="8" column="104" selection-start="441" selection-end="491" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,7 +91,7 @@
       <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/paket/create.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="81" selection-start="462" selection-end="462" vertical-scroll-proportion="-1.7777778">
+            <state line="8" column="81" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,7 +100,7 @@
       <file leaf-file-name="create.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/suessie/create.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="83" selection-start="470" selection-end="470" vertical-scroll-proportion="-1.7777778">
+            <state line="8" column="83" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -131,7 +109,16 @@
       <file leaf-file-name="PaketController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/PaketController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="86" selection-start="772" selection-end="815" vertical-scroll-proportion="-2.5142858">
+            <state line="23" column="132" selection-start="752" selection-end="752" vertical-scroll-proportion="-2.057143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FixFuerController.groovy" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/FixFuerController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="134" selection-start="778" selection-end="778" vertical-scroll-proportion="0.04511278">
               <folding />
             </state>
           </provider>
@@ -140,7 +127,7 @@
       <file leaf-file-name="SuessieController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/SuessieController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="88" selection-start="843" selection-end="843" vertical-scroll-proportion="-2.7428572">
+            <state line="15" column="18" selection-start="437" selection-end="437" vertical-scroll-proportion="-0.6857143">
               <folding />
             </state>
           </provider>
@@ -149,7 +136,7 @@
       <file leaf-file-name="Suessie.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/Suessie.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="-0.42857143">
+            <state line="2" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,7 +148,7 @@
       <file leaf-file-name="ArchiveSupply.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupply.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="10" selection-start="58" selection-end="58" vertical-scroll-proportion="-0.42857143">
+            <state line="2" column="10" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -170,10 +157,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArchiveSupplyController.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ArchiveSupplyController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupplyController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.8">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.gsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="32" selection-start="2859" selection-end="2859" vertical-scroll-proportion="-3.1111112">
               <folding />
             </state>
           </provider>
@@ -416,6 +412,32 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="paket" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dont-forget-your-food-supplies" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="dont-forget-your-food-supplies" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="haushalt-verwaltung" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="grails-app" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="views" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="layouts" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -755,7 +777,6 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
-      <window_info id="Grails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931036" sideWeight="0.5" order="-1" side_tool="false" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6586207" order="0" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
@@ -763,6 +784,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32931036" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
+      <window_info id="Grails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32931036" sideWeight="0.5" order="7" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
     </layout>
   </component>
@@ -895,75 +917,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/FixFuerController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="57" selection-start="698" selection-end="753" vertical-scroll-proportion="-2.7142856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/Suessie.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="-0.42857143">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/fixFuer/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="104" selection-start="441" selection-end="491" vertical-scroll-proportion="-1.7777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/paket/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="81" selection-start="462" selection-end="462" vertical-scroll-proportion="-1.7777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/autoComplete/_suggestions.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="79" selection-start="351" selection-end="351" vertical-scroll-proportion="-0.8888889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/suessie/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="83" selection-start="470" selection-end="470" vertical-scroll-proportion="-1.7777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/PaketController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="86" selection-start="772" selection-end="815" vertical-scroll-proportion="-2.5142858">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/SuessieController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="88" selection-start="843" selection-end="843" vertical-scroll-proportion="-2.7428572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupply.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="58" selection-end="58" vertical-scroll-proportion="-0.42857143">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/css/cupertino/jquery-ui-1.7.2.custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -971,9 +924,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/autoComplete/_suggestions.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="79" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/fixFuer/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="104" selection-start="441" selection-end="491" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/paket/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="81" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/suessie/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="83" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/Suessie.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupply.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/layouts/main.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="32" selection-start="2859" selection-end="2859" vertical-scroll-proportion="-3.1111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/ArchiveSupplyController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="4.8">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/SuessieController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="437" selection-end="437" vertical-scroll-proportion="-0.6857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/PaketController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="132" selection-start="752" selection-end="752" vertical-scroll-proportion="-2.057143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/de/webmpuls/dontforgetyourfoodsupplies/FixFuerController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="134" selection-start="778" selection-end="778" vertical-scroll-proportion="0.04511278">
           <folding />
         </state>
       </provider>

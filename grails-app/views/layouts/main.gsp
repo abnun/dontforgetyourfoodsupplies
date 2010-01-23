@@ -64,6 +64,10 @@
 								<g:link controller="suessie">"S&uuml;&szlig;ies"</g:link>
 							</h2>
 
+							<h2 title="'Archiv' verwalten">
+								<g:link controller="archiveSupply">Archiv</g:link>
+							</h2>
+
 						</div>
 					</div>
 				</div>

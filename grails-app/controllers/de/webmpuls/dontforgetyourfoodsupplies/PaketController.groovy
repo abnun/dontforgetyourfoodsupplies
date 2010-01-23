@@ -21,7 +21,7 @@ class PaketController {
 
     def save = {
         def paketInstance = new Paket(params)
-		def archiveSupplyInstance = new ArchiveSupply(name: params.name, supplyClass: Paket.getClass().name)
+		def archiveSupplyInstance = new ArchiveSupply(name: params.name, supplyClass: Paket.newInstance().getClass().getSimpleName())
         if (paketInstance.save(flush: true) && archiveSupplyInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'paket.label', default: 'Paket'), paketInstance.id])}"
             redirect(action: "show", id: paketInstance.id)
