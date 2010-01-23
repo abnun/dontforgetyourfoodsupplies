@@ -6,7 +6,7 @@
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'suessie.label', default: 'Suessie')}" />
         <title><g:message code="default.create.label" args="[entityName]" /></title>
-		<g:render template="/autoComplete/suggestions" model="[supplyClass: Suessie.getClass().name]" />
+		<g:render template="/autoComplete/suggestions" model="[supplyClass: Suessie.newInstance().getClass().getSimpleName()]" />
     </head>
     <body>
         <div class="nav">

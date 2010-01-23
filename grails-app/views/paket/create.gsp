@@ -6,7 +6,7 @@
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'paket.label', default: 'Paket')}" />
         <title><g:message code="default.create.label" args="[entityName]" /></title>
-		<g:render template="/autoComplete/suggestions" model="[supplyClass: Paket.getClass().name]" />
+		<g:render template="/autoComplete/suggestions" model="[supplyClass: Paket.newInstance().getClass().getSimpleName()]" />
     </head>
     <body>
         <div class="nav">
