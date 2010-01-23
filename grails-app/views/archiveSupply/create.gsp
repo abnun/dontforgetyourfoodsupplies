@@ -1,12 +1,11 @@
 
-<%@ page import="de.webmpuls.dontforgetyourfoodsupplies.FixFuer" %>
+<%@ page import="de.webmpuls.dontforgetyourfoodsupplies.ArchiveSupply" %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'fixFuer.label', default: 'FixFuer')}" />
+        <g:set var="entityName" value="${message(code: 'archiveSupply.label', default: 'ArchiveSupply')}" />
         <title><g:message code="default.create.label" args="[entityName]" /></title>
-		<g:render template="/autoComplete/suggestions" model="[supplyClass: FixFuer.getClass().name]" />
     </head>
     <body>
         <div class="nav">
@@ -18,9 +17,9 @@
             <g:if test="${flash.message}">
             <div class="message">${flash.message}</div>
             </g:if>
-            <g:hasErrors bean="${fixFuerInstance}">
+            <g:hasErrors bean="${archiveSupplyInstance}">
             <div class="errors">
-                <g:renderErrors bean="${fixFuerInstance}" as="list" />
+                <g:renderErrors bean="${archiveSupplyInstance}" as="list" />
             </div>
             </g:hasErrors>
             <g:form action="save" method="post" >
@@ -30,28 +29,19 @@
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="name"><g:message code="fixFuer.name.label" default="Name" /></label>
+                                    <label for="supplyClass"><g:message code="archiveSupply.supplyClass.label" default="Supply Class" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: fixFuerInstance, field: 'name', 'errors')}">
-                                    <g:textField name="name" value="${fixFuerInstance?.name}" />
-                                </td>
-                            </tr>
-                        
-                            <tr class="prop">
-                                <td valign="top" class="name">
-                                    <label for="amount"><g:message code="fixFuer.amount.label" default="Amount" /></label>
-                                </td>
-                                <td valign="top" class="value ${hasErrors(bean: fixFuerInstance, field: 'amount', 'errors')}">
-                                    <g:textField name="amount" value="${fieldValue(bean: fixFuerInstance, field: 'amount')}" />
+                                <td valign="top" class="value ${hasErrors(bean: archiveSupplyInstance, field: 'supplyClass', 'errors')}">
+                                    <g:textField name="supplyClass" value="${archiveSupplyInstance?.supplyClass}" />
                                 </td>
                             </tr>
                         
                             <tr class="prop">
                                 <td valign="top" class="name">
-                                    <label for="haltbarBis"><g:message code="fixFuer.haltbarBis.label" default="Haltbar Bis" /></label>
+                                    <label for="name"><g:message code="archiveSupply.name.label" default="Name" /></label>
                                 </td>
-                                <td valign="top" class="value ${hasErrors(bean: fixFuerInstance, field: 'haltbarBis', 'errors')}">
-                                    <g:datePicker name="haltbarBis" precision="day" value="${fixFuerInstance?.haltbarBis}"  />
+                                <td valign="top" class="value ${hasErrors(bean: archiveSupplyInstance, field: 'name', 'errors')}">
+                                    <g:textField name="name" value="${archiveSupplyInstance?.name}" />
                                 </td>
                             </tr>
                         

@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="${resource(dir: 'css', file: 'jquery.autocomplete.css')}"/>
 <script type="text/javascript" src="${resource(dir: 'js/jquery', file: 'jquery.autocomplete.js')}"></script>
 <%
-	Collection archiveSupplies = ArchiveSupply.list()
+	Collection archiveSupplies = ArchiveSupply.findAllBySupplyClass(supplyClass)
 	StringBuilder builder = new StringBuilder()
 	for (ArchiveSupply archiveSupply: archiveSupplies)
 	{
