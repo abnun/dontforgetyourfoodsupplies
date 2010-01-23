@@ -25,7 +25,6 @@
 		</style>
 		<![endif]-->
 
-        <g:javascript library="application" />
         <g:javascript library="jquery" />
 		<g:layoutHead />
     </head>
