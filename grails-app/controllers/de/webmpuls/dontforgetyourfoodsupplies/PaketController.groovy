@@ -1,5 +1,8 @@
 package de.webmpuls.dontforgetyourfoodsupplies
 
+import grails.converters.deep.XML
+import grails.converters.deep.JSON
+
 class PaketController {
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
@@ -10,7 +13,27 @@ class PaketController {
 
     def list = {
         //params.max = Math.min(params.max ? params.max.toInteger() : 10, 100)
-        [paketInstanceList: Paket.list(params), paketInstanceTotal: Paket.count()]
+
+		def paketList = Paket.list([sort: 'eingefrorenAm', order: 'desc'])
+
+		withFormat
+		{
+
+			xml
+			{
+				render(text: paketList as XML, contentType: 'text/xml')
+			}
+
+			json
+			{
+				render(text: paketList as JSON, contentType: 'text/json')
+			}
+
+			html
+			{
+				[paketInstanceList: paketList, paketInstanceTotal: Paket.count()]
+			}
+		}
     }
 
     def create = {

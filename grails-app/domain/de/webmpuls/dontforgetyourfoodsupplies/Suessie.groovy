@@ -4,6 +4,11 @@ class Suessie extends Supply
 {
 	Date haltbarBis
 
+	static mapping =
+	{
+		sort haltbarBis: "asc"
+	}
+
     static constraints =
 	{
 		name()
