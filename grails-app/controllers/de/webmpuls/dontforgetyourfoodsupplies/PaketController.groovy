@@ -14,7 +14,7 @@ class PaketController {
     def list = {
         //params.max = Math.min(params.max ? params.max.toInteger() : 10, 100)
 
-		def paketList = Paket.list([sort: 'eingefrorenAm', order: 'desc'])
+		def paketList = Paket.list()
 
 		withFormat
 		{
