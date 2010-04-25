@@ -7,7 +7,7 @@ class Setting
 
 	ShiroUser user
 
-	Integer expiringYears = 12
+	Integer expiringYears = 1
 	Integer expiringMonths = 0
 
     static constraints =

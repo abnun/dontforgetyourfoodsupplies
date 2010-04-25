@@ -41,7 +41,7 @@ class TimelineTagLib {
 				Integer expiringYears = setting.expiringYears
 				Integer expiringMonths = setting.expiringMonths
 
-				Integer expiringMonthsAccumulated = expiringYears + expiringMonths
+				Integer expiringMonthsAccumulated = (expiringYears * 12) + expiringMonths
 
 				GregorianCalendar gregorianCalendar = new GregorianCalendar()
 				gregorianCalendar.setTime(expiringDate)
